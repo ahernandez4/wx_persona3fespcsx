@@ -107,7 +107,6 @@ bool P3fMem::SetPcsx2() {
 	//return false if we made it this far
 	return false;
 }
-
 int P3fMem::SetItemAmount(LONG itemname, int amount)
 {
 	//try to avoid a mistake so check for memory out of bounds
@@ -117,6 +116,7 @@ int P3fMem::SetItemAmount(LONG itemname, int amount)
 	}
 	//example: WriteValue(P3fMem::Medicine, amount, 2);
 	WriteValue(itemname, amount, 2);
+	return 0;
 }
 int P3fMem::SetMainCharacterLevel(int value)
 {
@@ -151,6 +151,7 @@ int P3fMem::SetPersonaLevel(int personaSlot, int value)
 		return -1;
 	}
 	WriteValue(P3fMem::Persona1_Level + (personaSlot * 0x34), value, 1);
+	return 0;
 }
 
 int P3fMem::SetPersonaSt(int personaSlot, int value)
@@ -159,6 +160,7 @@ int P3fMem::SetPersonaSt(int personaSlot, int value)
 		return -1;
 	}
 	WriteValue(P3fMem::Persona1_Str + (personaSlot * 0x34), value, 1);
+	return 0;
 }
 
 int P3fMem::SetPersonaMa(int personaSlot, int value)
@@ -167,6 +169,7 @@ int P3fMem::SetPersonaMa(int personaSlot, int value)
 		return -1;
 	}
 	WriteValue(P3fMem::Persona1_Mag + (personaSlot * 0x34), value, 1);
+	return 0;
 }
 
 int P3fMem::SetPersonaEn(int personaSlot, int value)
@@ -175,6 +178,7 @@ int P3fMem::SetPersonaEn(int personaSlot, int value)
 		return -1;
 	}
 	WriteValue(P3fMem::Persona1_En + (personaSlot * 0x34), value, 1);
+	return 0;
 }
 
 int P3fMem::SetPersonaAg(int personaSlot, int value)
@@ -183,6 +187,7 @@ int P3fMem::SetPersonaAg(int personaSlot, int value)
 		return -1;
 	}
 	WriteValue(P3fMem::Persona1_Ag + (personaSlot * 0x34), value, 1);
+	return 0;
 }
 
 int P3fMem::SetPersonaLu(int personaSlot, int value)
@@ -191,6 +196,7 @@ int P3fMem::SetPersonaLu(int personaSlot, int value)
 		return -1;
 	}
 	WriteValue(P3fMem::Persona1_Luc + (personaSlot * 0x34), value, 1);
+	return 0;
 }
 
 int P3fMem::SetPersonaMagic1(int personaSlot, int value)
@@ -199,6 +205,7 @@ int P3fMem::SetPersonaMagic1(int personaSlot, int value)
 		return -1;
 	}
 	WriteValue(P3fMem::Persona1_Magic1 + (personaSlot * 0x34), value, 2);
+	return 0;
 }
 
 int P3fMem::SetPersonaMagic2(int personaSlot, int value)
@@ -207,6 +214,7 @@ int P3fMem::SetPersonaMagic2(int personaSlot, int value)
 		return -1;
 	}
 	WriteValue(P3fMem::Persona1_Magic2 + (personaSlot * 0x34), value, 2);
+	return 0;
 }
 
 int P3fMem::SetPersonaMagic3(int personaSlot, int value)
@@ -215,6 +223,7 @@ int P3fMem::SetPersonaMagic3(int personaSlot, int value)
 		return -1;
 	}
 	WriteValue(P3fMem::Persona1_Magic3 + (personaSlot * 0x34), value, 2);
+	return 0;
 }
 
 int P3fMem::SetPersonaMagic4(int personaSlot, int value)
@@ -223,6 +232,7 @@ int P3fMem::SetPersonaMagic4(int personaSlot, int value)
 		return -1;
 	}
 	WriteValue(P3fMem::Persona1_Magic4 + (personaSlot * 0x34), value, 2);
+	return 0;
 }
 
 int P3fMem::SetPersonaMagic5(int personaSlot, int value)
@@ -231,6 +241,7 @@ int P3fMem::SetPersonaMagic5(int personaSlot, int value)
 		return -1;
 	}
 	WriteValue(P3fMem::Persona1_Magic5 + (personaSlot * 0x34), value, 2);
+	return 0;
 }
 
 int P3fMem::SetPersonaMagic6(int personaSlot, int value)
@@ -239,6 +250,7 @@ int P3fMem::SetPersonaMagic6(int personaSlot, int value)
 		return -1;
 	}
 	WriteValue(P3fMem::Persona1_Magic6 + (personaSlot * 0x34), value, 2);
+	return 0;
 }
 
 int P3fMem::SetPersonaMagic7(int personaSlot, int value)
@@ -247,6 +259,7 @@ int P3fMem::SetPersonaMagic7(int personaSlot, int value)
 		return -1;
 	}
 	WriteValue(P3fMem::Persona1_Magic7 + (personaSlot * 0x34), value, 2);
+	return 0;
 }
 
 int P3fMem::SetPersonaMagic8(int personaSlot, int value)
@@ -255,6 +268,7 @@ int P3fMem::SetPersonaMagic8(int personaSlot, int value)
 		return -1;
 	}
 	WriteValue(P3fMem::Persona1_Magic8 + (personaSlot * 0x34), value, 2);
+	return 0;
 }
 
 int P3fMem::SetMainCharacterMood(int value)
@@ -263,6 +277,7 @@ int P3fMem::SetMainCharacterMood(int value)
 		return -1;
 	}
 	WriteValue(P3fMem::Mc_Mood, value, 2);
+	return 0;
 }
 
 int P3fMem::SetMainCharacterAcademics(int value)
