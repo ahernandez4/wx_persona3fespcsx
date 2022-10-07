@@ -1,6 +1,6 @@
 #include "P3fMem.h"
 #include <iostream>
-#include <iostream>>
+#include <iostream>
 #if defined(_WIN32)
 
 //the following code was taken from the original persona3fes trainer
