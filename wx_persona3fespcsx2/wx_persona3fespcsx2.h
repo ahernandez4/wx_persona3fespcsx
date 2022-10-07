@@ -224,7 +224,7 @@ private:
 			"Topaz",
 			"Pearl",
 			"Ruby",
-			"Weird Takoyaki"
+			"Weird Takoyaki",
 			"Wild Burger",
 			"Instant Ramen",
 			"Side Dish",
